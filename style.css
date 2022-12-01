@@ -1,0 +1,178 @@
+
+body{
+   font-family:'Courier New', Courier, monospace;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+   margin: 0;
+   background-image: url(https://www.xmple.com/wallpaper/white-blue-stripes-streaks-lines-720x720-c2-ffffff-add8e6-l2-74-74-a-0-f-1.svg);
+}
+.poster{
+   display: flex; 
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 900px;
+
+}
+.posterImage{
+   display: flex;
+   justify-content: center;
+   width: 900px;
+}
+.content{
+   align-self: center;
+   display: flex;
+   width: 75%;
+   margin: 15px;
+}
+.nav-bar{
+   width: 75%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background:rgb(0, 125, 209);
+   flex-shrink: 0;
+   height: 64px;
+   border-bottom: solid black 2px;
+}
+.logo{
+   display: flex;
+   height: 100px;
+   z-index: 100;
+}
+.title{
+   display: flex;
+   height: 65px;
+}
+.back{
+   text-decoration: none;
+   color: white;
+   margin: 10px;
+}
+.container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 75%;
+   background-color: rgb(205, 252, 255);
+   height: 100%;
+   border-left: solid hsl(204, 84%, 81%) ;
+}
+.containerSearch{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 75%;
+      background-color: rgb(205, 252, 255);
+      height: 100%;
+      border-left: solid hsl(204, 84%, 81%) ;
+}
+.jennyfull{
+   height: 550px;
+}
+.scene{
+   display: flex;
+
+}
+.correct{
+   opacity: 0;
+   display: flex;
+   width: 30px;
+   height: 120px;
+   display: flex;
+   position: relative;
+   right: 470px;
+   top: 350px;
+   
+}
+#passport{
+   display: flex;
+   width: 35px;
+   height: 30px;
+   display: flex;
+   position: relative;
+   bottom: 160px;
+   left: 575px;
+   border: solid red 20px;
+   opacity: 0;
+}
+#trumpet{
+   display: flex;
+   width: 35px;
+   height: 85px;
+   display: flex;
+   position: relative;
+   bottom: 750px;
+   right: 580px;
+   border: solid red 20px;
+   opacity: 0;
+}
+#keys{
+   display: flex;
+   width: 20px;
+   height: 30px;
+   display: flex;
+   position: relative;
+   bottom: 640px;
+   left: 525px;
+   border: solid red 20px;
+   opacity: 0;
+}
+#phone{
+   display: flex;
+   width: 15px;
+   height: 30px;
+   display: flex;
+   position: relative;
+   bottom: 900px;
+   left: 100px;
+   border: solid red 20px;
+   opacity: 0;
+}
+.scene{
+   display: flex;
+}
+.searchBar{
+   display: flex;
+   width: 500px;
+   background-color:rgba(0, 0, 0, 0.3);
+   border: solid rgb(38, 108, 173) 5px;
+   border-radius: 3%;
+   justify-content: space-between;
+   align-items: center;
+   bottom: 1300px;
+   position: relative;
+
+}
+.card1, .card2, .card3, .card4{
+   display: flex;
+   height: 90px;
+   width: 90px;
+   border: solid rgb(255, 0, 0) 3px;
+   background-color: rgba(255, 2, 2, 0.3);
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.phoneBar{
+   width: 40px;
+   height: auto;
+   margin: 5px;
+}
+.trumpetBar{
+   width: 60px;
+   height: auto;
+   margin: 5px;
+}
+.passportBar{
+   width: 60px;
+   margin: 5px;
+}
+.keysBar{
+   width: 30px;
+   height: auto;
+   margin: 5px;
+}

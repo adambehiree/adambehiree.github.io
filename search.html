@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta casdharset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenny 2022</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-bar">
+    <img src="images/stamp jenny.png" class="logo">
+    <a href="index.html" class="title"><img src="images/title.png"></a>
+    <a href="page4.html" class="back">BACK</a>
+    </div>
+
+    <div class="containerSearch">
+    <img src="images/searchScene.png" class="search">
+    <div id="passport">pass</div>
+    <div id="keys">pass</div>
+    <div id="trumpet">pass</div>
+    <div id="phone">pass</div>
+
+    <div class="searchBar">
+       <div class="card1" ><img src="images/passport.png" class="passportBar"></div>
+       <div class="card2" ><img src="images/carkeys.png" class="keysBar"></div>
+        <div class="card3" ><img src="images/trumpet.png" class="trumpetBar"></div>
+        <div class="card4" ><img src="images/phone.png" class="phoneBar"></div>
+    </div>
+</body>
+
+<script>
+let passport = document.querySelector("#passport");
+const keys = document.querySelector("#keys");
+const trumpet = document.querySelector("#trumpet");
+const phone = document.querySelector("#phone");
+const passportBar = document.querySelector(".card1");
+const keysBar = document.querySelector(".card2");
+const trumpetBar = document.querySelector(".card3");
+const phoneBar = document.querySelector(".card4");
+
+passport.addEventListener("click", () => {passportBar.style.cssText= "background: rgba(0, 255, 64, 0.3); border: solid green"})
+keys.addEventListener("click", () => {keysBar.style.cssText= "background: rgba(0, 255, 64, 0.3); border: solid green"})
+trumpet.addEventListener("click", () => {trumpetBar.style.cssText= "background: rgba(0, 255, 64, 0.3); border: solid green"})
+phone.addEventListener("click", () => {phoneBar.style.cssText= "background: rgba(0, 255, 64, 0.3); border: solid green"})
+
+</script>
+</html>
