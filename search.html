@@ -64,7 +64,7 @@ let div = document.querySelector(".passwordPrompt")
 function password(){
     var answer = prompt('Enter Password!');
     let nextPage = document.createElement("div");
-    if (answer == "PIET"|"piet"|"Piet"){
+    if (answer === (("PIET")||("piet")||("Piet"))){
         window.open("page4.html", "_self")
     } else {
       ;
