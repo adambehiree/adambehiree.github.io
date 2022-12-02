@@ -53,7 +53,7 @@ body{
 
    text-decoration: none;
    color: white;
-   margin: 10px;
+   padding: 8px;
    transition-property: color;
    transition-delay: 60ms;
    transition-duration: 400ms;
