@@ -5,23 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jenny 2022</title>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="nav-bar">
     <img src="images/stamp jenny.png" class="logo">
     <a href="index.html" class="title"><img src="images/title.png"></a>
-    <a href="wally.html" class="back">BACK</a>
+    <a href="page6.html" class="back">BACK</a>
     </div>
 
-    <div class="container">
-        <img src="images/jennyfull.png" class="jennyfull">
-        <div class="poem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        <a href="search.html" class="nextClue">Click here to find Jenny's stuff</a>
+    <div class="containerTrump">
+        <img src="images/cartTrump.png" class="trumpetpic">
+        <div class="poem">
+        <a href="search.html" class="nextClue"></a>
+        <div class="buttonCon">
+        <button onmousedown="c4.play()" class="btn">
+         <button onmousedown="c5.play()" class="btn">
+         <button onmousedown="c6.play()" class="btn">
+         <button onmousedown="g3.play()" class="btn">
+         <button onmousedown="g4.play()" class="btn">
+         <button onmousedown="g5.play()" class="btn">
+        </div>
+        <a href="page8.html" id="next">Sounds...great? CLICK HERE TO CONTINUE!</div>
         </div>
 
+        <audio data-key="65" src="sounds/c4.wav"></audio>
+        <audio data-key="83" src="sounds/c5.wav"></audio>
+        <audio data-key="68" src="sounds/c6.wav"></audio>
+        <audio data-key="70" src="sounds/g3.wav"></audio>
+        <audio data-key="71" src="sounds/g4.wav"></audio>
+        <audio data-key="72" src="sounds/g5.wav"></audio>
+
+        <script>
+            window.addEventListener("keydown", function(e){
+                const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
+                audio.currentTime = 0;
+                audio.play();
+            
+            });
+
+            var c4 = new Audio();
+            c4.src = "sounds/c4.wav";
+            var c5 = new Audio();
+            c5.src = "sounds/c5.wav";
+            var c6 = new Audio();
+            c6.src = "sounds/c6.wav";
+            var g3 = new Audio();
+            g3.src = "sounds/g3.wav";
+            var g4 = new Audio();
+            g4.src = "sounds/g4.wav";
+            var g5 = new Audio();
+            g5.src = "sounds/g5.wav";
+
+            const next = document.getElementById("next");
+            
+            setTimeout(() => {
+                next.style.visibility = "visible";
+            }, 7000);
+
+
+        </script>
+
+
+
+
     </body>
+
+
     </html>

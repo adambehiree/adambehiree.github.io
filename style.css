@@ -30,7 +30,7 @@ body{
    margin: 15px;
 }
 .nav-bar{
-   width: 80vh;
+   width: 80%;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -71,13 +71,14 @@ body{
    height: 100%;
    border: solid black 2px ;
    text-align: center;
+   padding: 40px;
 }
 .containerSearch{
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 130%;
+      width: 1200px;
       background-color: rgb(205, 252, 255);
       border: solid black 2px;
       height: fit-content;
@@ -106,7 +107,7 @@ body{
    bottom: 150px;
    left: 450px;
    border: solid red 20px;
-   opacity: 1;
+   opacity: 0;
 }
 #trumpet{
    display: flex;
@@ -117,7 +118,7 @@ body{
    bottom: 630px;
    right: 460px;
    border: solid red 20px;
-   opacity: 1;
+   opacity: 0;
 }
 #keys{
    display: flex;
@@ -128,7 +129,7 @@ body{
    bottom: 540px;
    left: 420px;
    border: solid red 20px;
-   opacity: 1;
+   opacity: 0;
 }
 #phone{
    display: flex;
@@ -138,7 +139,7 @@ body{
    bottom: 780px;
    left: 80px;
    border: solid red 20px;
-   opacity: 1;
+   opacity: 0;
 }
 .scene{
    display: flex;
@@ -222,6 +223,49 @@ body{
    border: solid rgba(3, 231, 3, 0.5);
    background:rgba(3, 231, 3, 0.2)
 }
-.poem{
-
+.containerTrump{
+   display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 1200px;
+      background-color: rgb(205, 252, 255);
+      border: solid black 2px;
+      height: 100vh;
+      text-align: center;
+}
+.trumpetpic{
+   padding: 50px;
+   display: flex;
+   width: 800px;
+}
+.buttonCon{
+   margin: 20px;
+   display: flex;
+   width: 400px;
+   justify-content: space-evenly;
+}
+.btn{
+   background-color: rgb(255, 255, 116);
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   border: solid black 4px;
+   transition-property: border, background;
+}
+.btn:hover{
+   background: rgb(112, 112, 0);
+}
+#next{
+   margin-top: 50px;
+   font-size: 20px;
+   visibility: hidden;
+   text-decoration: underline;
+   color: black;
+   font-family: Arial, Helvetica, sans-serif;
+   transition-property: color ;
+   transition-delay: 100ms;
+   transition-duration: 200ms;
+}
+#next:hover{
+   color: aqua;
 }
