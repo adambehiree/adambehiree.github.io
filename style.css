@@ -35,7 +35,6 @@ body{
    justify-content: space-between;
    align-items: center;
    background:rgb(0, 125, 209);
-   flex-shrink: 0;
    height: 64px;
    border: solid black 2px;
    border-bottom: none;
@@ -61,6 +60,17 @@ body{
 }
 .back:hover{
    color: rgb(151, 255, 255);
+}
+.containerScene{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 90vh;
+   background-color: rgb(205, 252, 255);
+   height: 100%;
+   border: solid black 2px ;
+   text-align: center;
+
 }
 .container{
    display: flex;
