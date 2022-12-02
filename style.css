@@ -42,11 +42,13 @@ body{
 .logo{
    display: flex;
    height: 100px;
+   width: auto;
    z-index: 100;
 }
 .title{
    display: flex;
-   height: 7vh;
+   height: 60px;
+   width: auto;
 }
 .back{
 
@@ -76,7 +78,7 @@ body{
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 90vh;
+   width: 80%;
    background-color: rgb(205, 252, 255);
    height: 100%;
    border: solid black 2px ;
