@@ -1,6 +1,6 @@
 
 body{
-   width: 100vh;
+   width: 1500px;
    margin: auto;
    font-family:Arial, Helvetica, sans-serif;
    font-weight: 700;
@@ -106,7 +106,7 @@ body{
    bottom: 150px;
    left: 450px;
    border: solid red 20px;
-   opacity: 0;
+   opacity: 1;
 }
 #trumpet{
    display: flex;
@@ -117,7 +117,7 @@ body{
    bottom: 630px;
    right: 460px;
    border: solid red 20px;
-   opacity: 0;
+   opacity: 1;
 }
 #keys{
    display: flex;
@@ -128,17 +128,17 @@ body{
    bottom: 540px;
    left: 420px;
    border: solid red 20px;
-   opacity: 0;
+   opacity: 1;
 }
 #phone{
    display: flex;
    width: 15px;
    height: 30px;
-   position: AB;
+   position: relative;
    bottom: 780px;
    left: 80px;
    border: solid red 20px;
-   opacity: ;
+   opacity: 1;
 }
 .scene{
    display: flex;
