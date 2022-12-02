@@ -60,15 +60,15 @@ keys.addEventListener("click", () => {keysBar.style.cssText= "background: rgba(4
 trumpet.addEventListener("click", () => {trumpetBar.style.cssText= "background: rgba(4, 61, 16, 0.726); border: solid green 3px;color:rgba(0, 255, 64, 1)"})
 phone.addEventListener("click", () => {phoneBar.style.cssText= "background: rgba(4, 61, 16, 0.726); border: solid green 3px;color:rgba(0, 255, 64, 1)"})
 
-
 let div = document.querySelector(".passwordPrompt")
 function password(){
-    let answer = prompt('Enter Password!');
+    var answer = prompt('Enter Password!');
     let nextPage = document.createElement("div");
-    if (answer === "piet"||"PIET"){
+    if (answer == "PIET"|"piet"|"Piet"){
         window.open("page4.html", "_self")
+    } else {
+      ;
     }
-
 
 }
 div.addEventListener("click", password)

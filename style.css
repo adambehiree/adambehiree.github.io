@@ -1,12 +1,13 @@
 
 body{
+   width: 100vh;
+   margin: auto;
    font-family:Arial, Helvetica, sans-serif;
    font-weight: 700;
    display: flex;
    align-items: center;
    flex-direction: column;
    justify-content: center;
-   margin: 0;
    background-image: url(https://www.xmple.com/wallpaper/white-blue-stripes-streaks-lines-720x720-c2-ffffff-add8e6-l2-74-74-a-0-f-1.svg);
 }
 .poster{
@@ -20,7 +21,7 @@ body{
 .posterImage{
    display: flex;
    justify-content: center;
-   width: 900px;
+   width: 100%;
 }
 .content{
    align-self: center;
@@ -29,7 +30,7 @@ body{
    margin: 15px;
 }
 .nav-bar{
-   width: 75%;
+   width: 80vh;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -46,9 +47,10 @@ body{
 }
 .title{
    display: flex;
-   height: 65px;
+   height: 7vh;
 }
 .back{
+   display: flex;
    text-decoration: none;
    color: white;
    margin: 10px;
@@ -64,28 +66,26 @@ body{
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 75%;
+   width: 90vh;
    background-color: rgb(205, 252, 255);
    height: 100%;
    border: solid black 2px ;
+   text-align: center;
 }
 .containerSearch{
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 75%;
+      width: 130%;
       background-color: rgb(205, 252, 255);
-      height: 100%;
       border: solid black 2px;
+      height: fit-content;
 }
 .jennyfull{
    height: 550px;
 }
-.scene{
-   display: flex;
 
-}
 .correct{
    opacity: 0;
    display: flex;
@@ -103,8 +103,8 @@ body{
    height: 30px;
    display: flex;
    position: relative;
-   bottom: 160px;
-   left: 575px;
+   bottom: 150px;
+   left: 450px;
    border: solid red 20px;
    opacity: 0;
 }
@@ -114,8 +114,8 @@ body{
    height: 85px;
    display: flex;
    position: relative;
-   bottom: 750px;
-   right: 580px;
+   bottom: 630px;
+   right: 460px;
    border: solid red 20px;
    opacity: 0;
 }
@@ -125,8 +125,8 @@ body{
    height: 30px;
    display: flex;
    position: relative;
-   bottom: 640px;
-   left: 525px;
+   bottom: 540px;
+   left: 420px;
    border: solid red 20px;
    opacity: 0;
 }
@@ -136,8 +136,8 @@ body{
    height: 30px;
    display: flex;
    position: relative;
-   bottom: 900px;
-   left: 100px;
+   bottom: 780px;
+   left: 80px;
    border: solid red 20px;
    opacity: 0;
 }
@@ -146,17 +146,20 @@ body{
    border: solid black 2px;
 }
 .search{
+   margin: auto;
+   display: flex;
    border: solid black 2px;
+   width: 1200px;
 }
 .searchBar{
    display: flex;
-   width: 500px;
+   width: 400px;
    background-color:rgba(0, 0, 0, 0.3);
    border: solid rgb(38, 108, 173) 5px;
    border-radius: 3%;
    justify-content: space-between;
    align-items: center;
-   bottom: 1300px;
+   bottom: 1100px;
    position: relative;
 
 }
@@ -205,7 +208,7 @@ body{
    height: 30px;
    display: flex;
    position: relative;
-   bottom: 1300px;
+   bottom: 1100px;
    color: rgb(255, 75, 75);
    font-size: 25px;
    text-align: center;
@@ -219,4 +222,7 @@ body{
    color: green;
    border: solid rgba(3, 231, 3, 0.5);
    background:rgba(3, 231, 3, 0.2)
+}
+.poem{
+   
 }
