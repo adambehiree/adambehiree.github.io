@@ -50,7 +50,7 @@ body{
    height: 7vh;
 }
 .back{
-   display: flex;
+
    text-decoration: none;
    color: white;
    margin: 10px;
@@ -134,12 +134,11 @@ body{
    display: flex;
    width: 15px;
    height: 30px;
-   display: flex;
-   position: relative;
+   position: AB;
    bottom: 780px;
    left: 80px;
    border: solid red 20px;
-   opacity: 0;
+   opacity: ;
 }
 .scene{
    display: flex;
@@ -224,5 +223,5 @@ body{
    background:rgba(3, 231, 3, 0.2)
 }
 .poem{
-   
+
 }
