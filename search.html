@@ -55,26 +55,20 @@ const trumpetBar = document.querySelector(".card3");
 const phoneBar = document.querySelector(".card4");
 const containerSearch = document.querySelector("containerSearch");
 
-passport.addEventListener("click", () => {passportBar.style.cssText= "background: rgba(0, 255, 64, 0.3); border: solid green 3px;color:rgba(0, 255, 64, 1)"})
-keys.addEventListener("click", () => {keysBar.style.cssText= "background: rgba(0, 255, 64, 0.3); border: solid green 3px;color:rgba(0, 255, 64, 1)"})
-trumpet.addEventListener("click", () => {trumpetBar.style.cssText= "background: rgba(0, 255, 64, 0.3); border: solid green 3px;color:rgba(0, 255, 64, 1)"})
-phone.addEventListener("click", () => {phoneBar.style.cssText= "background: rgba(0, 255, 64, 0.3); border: solid green 3px;color:rgba(0, 255, 64, 1)"})
+passport.addEventListener("click", () => {passportBar.style.cssText= "background: rgba(4, 61, 16, 0.726); border: solid green 3px;color:rgba(0, 255, 64, 1)"})
+keys.addEventListener("click", () => {keysBar.style.cssText= "background: rgba(4, 61, 16, 0.726); border: solid green 3px;color:rgba(0, 255, 64, 1)"})
+trumpet.addEventListener("click", () => {trumpetBar.style.cssText= "background: rgba(4, 61, 16, 0.726); border: solid green 3px;color:rgba(0, 255, 64, 1)"})
+phone.addEventListener("click", () => {phoneBar.style.cssText= "background: rgba(4, 61, 16, 0.726); border: solid green 3px;color:rgba(0, 255, 64, 1)"})
 
 
 let div = document.querySelector(".passwordPrompt")
 function password(){
     let answer = prompt('Enter Password!');
     let nextPage = document.createElement("div");
-    if (answer === "piet"){
-        let nextPage = document.createElement("div");
-        nextPage.classList.add("pages");
-        nextPage.textContent= "teststetestst";
-
-
-        containerSearch.appendChild(div);
-        console.log(nextPage);
+    if (answer === "piet"||"PIET"){
+        window.open("page4.html", "_self")
     }
-console.log(nextPage)
+
 
 }
 div.addEventListener("click", password)
