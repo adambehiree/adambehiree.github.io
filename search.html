@@ -21,11 +21,26 @@
     <div id="trumpet">pass</div>
     <div id="phone">pass</div>
 
+
     <div class="searchBar">
-       <div class="card1" ><img src="images/passport.png" class="passportBar"></div>
-       <div class="card2" ><img src="images/carkeys.png" class="keysBar"></div>
-        <div class="card3" ><img src="images/trumpet.png" class="trumpetBar"></div>
-        <div class="card4" ><img src="images/phone.png" class="phoneBar"></div>
+       <div class="card1" >
+        <img src="images/passport.png" class="passportBar">
+        <div class="p">P</div>
+    </div>
+       <div class="card2" >
+        <img src="images/carkeys.png" class="keysBar">
+        <div class="p">I</I></div>
+    </div>
+        <div class="card3">
+            <img src="images/trumpet.png" class="trumpetBar">
+            <div class="p">E</div>
+        </div>
+        <div class="card4">
+            <img src="images/phone.png" class="phoneBar">
+            <div class="p">T</div>
+        </div>
+    </div>
+    <div class="passwordPrompt">click to enter password</div>
     </div>
 </body>
 
@@ -38,11 +53,33 @@ const passportBar = document.querySelector(".card1");
 const keysBar = document.querySelector(".card2");
 const trumpetBar = document.querySelector(".card3");
 const phoneBar = document.querySelector(".card4");
+const containerSearch = document.querySelector("containerSearch");
 
-passport.addEventListener("click", () => {passportBar.style.cssText= "background: rgba(0, 255, 64, 0.3); border: solid green"})
-keys.addEventListener("click", () => {keysBar.style.cssText= "background: rgba(0, 255, 64, 0.3); border: solid green"})
-trumpet.addEventListener("click", () => {trumpetBar.style.cssText= "background: rgba(0, 255, 64, 0.3); border: solid green"})
-phone.addEventListener("click", () => {phoneBar.style.cssText= "background: rgba(0, 255, 64, 0.3); border: solid green"})
+passport.addEventListener("click", () => {passportBar.style.cssText= "background: rgba(0, 255, 64, 0.3); border: solid green 3px;color:rgba(0, 255, 64, 1)"})
+keys.addEventListener("click", () => {keysBar.style.cssText= "background: rgba(0, 255, 64, 0.3); border: solid green 3px;color:rgba(0, 255, 64, 1)"})
+trumpet.addEventListener("click", () => {trumpetBar.style.cssText= "background: rgba(0, 255, 64, 0.3); border: solid green 3px;color:rgba(0, 255, 64, 1)"})
+phone.addEventListener("click", () => {phoneBar.style.cssText= "background: rgba(0, 255, 64, 0.3); border: solid green 3px;color:rgba(0, 255, 64, 1)"})
+
+
+let div = document.querySelector(".passwordPrompt")
+function password(){
+    let answer = prompt('Enter Password!');
+    let nextPage = document.createElement("div");
+    if (answer === "piet"){
+        let nextPage = document.createElement("div");
+        nextPage.classList.add("pages");
+        nextPage.textContent= "teststetestst";
+
+
+        containerSearch.appendChild(div);
+        console.log(nextPage);
+    }
+console.log(nextPage)
+
+}
+div.addEventListener("click", password)
+    
+
 
 </script>
 </html>
