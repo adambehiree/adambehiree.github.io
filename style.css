@@ -51,7 +51,7 @@ body{
    width: auto;
 }
 .back{
-
+   display: flex;
    text-decoration: none;
    color: white;
    padding: 8px;
@@ -78,7 +78,7 @@ body{
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 80%;
+   width: 1200px;
    background-color: rgb(205, 252, 255);
    height: 100%;
    border: solid black 2px ;
@@ -280,4 +280,11 @@ body{
 }
 #next:hover{
    color: aqua;
+}
+.poem{
+   text-align: center;
+}
+pre{
+   font-family:'Courier New', Courier, monospace;
+   font-size: large;
 }
